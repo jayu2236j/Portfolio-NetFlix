@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job • Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .mini{max-width:760px; margin:2rem auto; padding:0 1rem}
+    .mini .head{display:flex; align-items:center; gap:.75rem; margin-bottom:.5rem}
+    .mini .head img{width:44px; height:44px; object-fit:contain; background:#111; border-radius:10px; padding:6px}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <span class="badge">JC</span>
+      <a href="index.html">Jay&nbsp;Champaneri</a>
+    </div>
+    <nav class="links">
+      <a class="btn" href="index.html#experience">Back</a>
+    </nav>
+  </header>
+
+  <main class="mini">
+    <div class="panel">
+      <div class="head">
+        <img id="jLogo" alt="Company logo" />
+        <h1 id="jTitle" style="margin:0"></h1>
+      </div>
+      <div id="jTags" class="list" style="margin:.25rem 0 .5rem"></div>
+      <div id="jBody" class="modal-body"></div>
+    </div>
+  </main>
+
+  <footer style="text-align:center; padding:1rem; color:#cfcfcf">
+    © <span id="year"></span> Jay Champaneri • Job Details
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="job.js"></script>
+</body>
+</html>

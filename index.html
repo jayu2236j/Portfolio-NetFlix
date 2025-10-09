@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jay Champaneri • Portfolio</title>
+  <meta name="description" content="Netflix-style portfolio of Jay Champaneri — projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="brand">
+      <span class="badge">JC</span>
+      <div class="links" >
+       <span href="http://127.0.0.1:5500/Portfolio-NetFlix/index.html" >Jay&nbsp;Champaneri</span>
+    </div>
+    </div>
+    <nav class="links">
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn" href="#skills">Skills</a>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Welcome to Series Of Jay Champaneri 🍿</h1>
+      <p>Motivated Computer Science student at the University of Winnipeg, focusing on Java, SQL, web development, and AWS. I like shipping simple, useful apps and learning in public.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn secondary" href="https://github.com/jayu2236j" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROWS -->
+  <main class="section">
+    <!-- PROJECTS -->
+    <div class="row" id="projects">
+      <h2>Projects</h2>
+      <div class="scroller">
+        <!-- TaskFlow (Completed) -->
+        <article class="card" role="link" tabindex="0" data-kind="project" data-id="taskflow">
+          <span class="tag">Completed</span>
+          <h3>MEARN — Task/Notes App</h3>
+          <p>Full Stack Notes App using MERN. Our Notes App contains functionalities like Authentication (Login & Sign Up), Adding/Edit Notes, Pin important notes to the top, and searching through the notes.  </p>
+          <div class="list">
+            <span class="chip">Node.js</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Express</span>
+            <span class="chip">TailWind</span>
+            <span class="chip">React JS</span>
+          </div>
+          <div class="actions" style="margin-top:.75rem">
+            <a class="btn" href="https://github.com/jayu2236j/MERN-Notes-App.git" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="#" aria-disabled="true">Live Demo</a>
+          </div>
+          <div class="art"></div>
+        </article>
+
+        <!-- Weather App (In Progress) -->
+        <article class="card" role="link" tabindex="0" data-kind="project" data-id="weather">
+          <span class="tag">In Progress</span>
+          <h3>Weather App — Live Weather Viewer</h3>
+          <p>Shows real-time weather by city using a public API. Learning API fetch, UI polish, and deployment.</p>
+          <div class="list">
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">API</span>
+          </div>
+          <div class="actions" style="margin-top:.75rem">
+            <a class="btn" href="https://github.com/jayu2236j" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="#" aria-disabled="true">Live Demo</a>
+          </div>
+          <div class="art"></div>
+        </article>
+
+        <!-- Future Project placeholder -->
+        <article class="card" role="link" tabindex="0" data-kind="project" data-id="financetracker">
+          <span class="tag">Up Next</span>
+          <h3>Personal Finance Tracker</h3>
+          <p>Track expenses, categories, and goals. Focus: CRUD, charts, and clean UX.</p>
+          <div class="list">
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Express</span>
+            <span class="chip">Charts</span>
+          </div>
+          <div class="actions" style="margin-top:.75rem">
+            <a class="btn secondary" href="#">Planning</a>
+          </div>
+          <div class="art"></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="row" id="skills">
+      <h2>Skills</h2>
+      <button class="scroll-btn prev" data-scroll="#skills .scroller" aria-label="Scroll left">‹</button>
+      <button class="scroll-btn next" data-scroll="#skills .scroller" aria-label="Scroll right">›</button>
+      <div class="scroller">
+        <div class="card"><h3>Cloud</h3><p class="muted">AWS (Cloud fundamentals)</p><div class="list"><span class="chip">EC2</span><span class="chip">S3</span><span class="chip">IAM</span></div><div class="art"></div></div>
+        <div class="card"><h3>Programming</h3><p class="muted">Java, Data Structures</p><div class="list"><span class="chip">OOP</span><span class="chip">DSA</span></div><div class="art"></div></div>
+        <div class="card"><h3>Databases</h3><p class="muted">SQL (PostgreSQL), MongoDB</p><div class="list"><span class="chip">Schema</span><span class="chip">CRUD</span></div><div class="art"></div></div>
+        <div class="card"><h3>Web</h3><p class="muted">Node.js, React basics,HTML,JS</p><div class="list"><span class="chip">REST</span><span class="chip">Fetch</span></div><div class="art"></div></div>
+        <div class="card"><h3>TeamLeader</h3><p class="muted">Leadership, communication</p><div class="list"><span class="chip"></span><span class="chip"> </span></div><div class="art"></div></div>
+        <div class="card"><h3>Quick Learner</h3><p class="muted">Ready To Adapt New things</p><div class="list"><span class="chip"></span><span class="chip"></span></div><div class="art"></div></div>
+        <div class="card"><h3>Flexible</h3><p class="muted">Remote , Offline</p><div class="list"><span class="chip"></span><span class="chip"></span></div><div class="art"></div></div>
+
+      </div>
+    </div>
+
+    <!-- ABOUT + CONTACT -->
+    <div class="row grid" id="about">
+      <section class="panel">
+        <h2>About Me</h2>
+        <p>Enthusiastic and detail-oriented CS student with hands-on experience in customer service, leadership, and technical problem solving. Building practical apps and growing skills in web and cloud.</p>
+        <ul class="muted">
+          <li>University of Winnipeg — Applied Computer Science (2023–2026)</li>
+          <li>AWS Cloud Practitioner Essentials (2025)</li>
+          <li>Google Ai Essentials(2025)</li>
+        </ul>
+      </section>
+
+      <section class="panel" id="contact">
+        <h2>Contact</h2>
+        <p class="muted">Open to internships and part-time roles.</p>
+        <div class="list">
+          <a class="btn" href="mailto:jaychampaneri2004@gmail.com">Email</a>
+          <a class="btn secondary" href="https://github.com/jayu2236j" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- Add LinkedIn when ready -->
+        </div>
+      </section>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="row" id="experience">
+      <h2>Experience</h2>
+      <div class="scroller">
+        <article class="card" role="link" tabindex="0" data-kind="job" data-id="starbucks">
+          <span class="tag">2025–Present</span>
+          <h3>Barista — Starbucks</h3>
+          <p>Deliver quality service, handle payments, and support team ops during peak hours.</p>
+          <div class="list"><span class="chip">Customer Service</span><span class="chip">POS</span></div>
+          <div class="art"></div>
+        </article>
+        <article class="card" role="link" tabindex="0" data-kind="job" data-id="timhortons">
+          <span class="tag">2024–2025</span>
+          <h3>Team Lead — Tim Hortons</h3>
+          <p>Led 10+ staff, optimized workflow & scheduling, resolved issues to maintain speed.</p>
+          <div class="list"><span class="chip">Leadership</span><span class="chip">Ops</span></div>
+          <div class="art"></div>
+        </article>
+        <article class="card" role="link" tabindex="0" data-kind="job" data-id="seineriver">
+          <span class="tag">2023–2024</span>
+          <h3>Dietary Aide — Seine River Retirement</h3>
+          <p>Delivered service with accuracy and compliance; collaborated across departments.</p>
+          <div class="list"><span class="chip">Teamwork</span><span class="chip">Compliance</span></div>
+          <div class="art"></div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Jay Champaneri • Built with HTML/CSS/JS • Hosted on GitHub Pages
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

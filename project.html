@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project • Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .detail-hero{padding:2rem clamp(1rem,4vw,3rem) 1rem; background:radial-gradient(800px 300px at 100% -10%, #e5091433, transparent 50%)}
+    .detail-layout{display:grid; grid-template-columns:1.2fr .9fr; gap:1.25rem; padding:0 clamp(1rem,4vw,3rem) 2rem}
+    @media (max-width: 900px){.detail-layout{grid-template-columns:1fr}}
+    .shot{background:#0f0f0f; border-radius:16px; overflow:hidden; box-shadow:var(--shadow)}
+    .shot img{width:100%; display:block}
+    .badges{display:flex; flex-wrap:wrap; gap:.5rem; margin:.5rem 0}
+    .crumbs{font-size:.95rem; color:#cfcfcf}
+    .crumbs a{color:#fff; text-decoration:underline}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <span class="badge">JC</span>
+      <a href="index.html">Jay&nbsp;Champaneri</a>
+    </div>
+    <nav class="links">
+      <a class="btn" href="index.html#projects">Back to Projects</a>
+    </nav>
+  </header>
+
+  <section class="detail-hero">
+    <div class="crumbs"><a href="index.html">Home</a> / <span id="pCrumb">Project</span></div>
+    <h1 id="pTitle" style="margin:.5rem 0 0"></h1>
+    <div id="pTags" class="badges"></div>
+  </section>
+
+  <main class="detail-layout">
+    <div>
+      <div class="shot"><img id="pImage" alt="Project screenshot"></div>
+      <div class="actions" id="pActions" style="margin-top:.75rem"></div>
+    </div>
+    <aside class="panel">
+      <h2>Overview</h2>
+      <div id="pDesc" class="modal-body"></div>
+      <h2 style="margin-top:1rem">Languages</h2>
+      <div id="pLangs" class="list"></div>
+      <h2 style="margin-top:1rem">Skills</h2>
+      <div id="pSkills" class="list"></div>
+    </aside>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Jay Champaneri • Project Details
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="project.js"></script>
+</body>
+</html>
