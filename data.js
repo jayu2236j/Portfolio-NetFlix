@@ -53,7 +53,7 @@ const DETAILS = {
     job: {
       starbucks: {
         title: 'Barista — Starbucks',
-        logo: 'assets/logos/starbucks.png',
+        logo: 'assets/logos/starbucks.jpeg',
         tags: ['Customer Service','POS','Teamwork'],
         description: [
           'Provided excellent customer service and maintained a welcoming environment.',
@@ -64,7 +64,7 @@ const DETAILS = {
       },
       timhortons: {
         title: 'Team Lead — Tim Hortons',
-        logo: 'assets/logos/timhortons.png',
+        logo: 'assets/logos/tims.png',
         tags: ['Leadership','Operations','Training'],
         description: [
           'Led and coached a team of 10+ to achieve high efficiency under pressure.',
@@ -74,13 +74,26 @@ const DETAILS = {
       },
       seineriver: {
         title: 'Dietary Aide — Seine River Retirement',
-        logo: 'assets/logos/seineriver.png',
+        logo: 'assets/logos/dietaryaid.webp',
         tags: ['Compliance','Teamwork','Care'],
         description: [
           'Delivered meals according to residents’ dietary requirements and safety standards.',
           'Coordinated with kitchen staff for accuracy and timeliness.',
           'Assisted residents and supported a clean, safe food service environment.'
         ]
+      },
+      pizzapizza: {
+        title: 'Shift Supervisor  — Pizza Pizza',
+        logo: 'assets/logos/pizza.png',
+        tags: ['Compliance','Teamwork','Leadership'],
+        description: [
+          "Ran fast-paced dinner and late-night shifts, coordinating cooks, cash, and delivery orders to keep wait-times low and accuracy high.",
+    "Trained new staff on POS, food-safety (HACCP), portioning, and upselling best practices.",
+    "Balanced tills and completed end-of-day paperwork, including deposits and variance checks.",
+    "Managed online/phone orders and prioritized the make-line to hit on-time delivery targets.",
+    "Resolved customer issues on the spot and protected reviews through quick, fair solutions."
+  ]
+        
       }
     }
   };
