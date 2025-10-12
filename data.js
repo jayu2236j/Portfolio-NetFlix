@@ -1,6 +1,7 @@
 // Shared data for projects and jobs. Update paths, text, and links as you like.
 // Place images here (create folders): assets/screenshots/*  and  assets/logos/*
 
+
 const DETAILS = {
     project: {
       taskflow: {
@@ -118,7 +119,7 @@ export const certificates = [
     issuer: "Google on Coursera",
     date: "Oct 10, 2025",
     link: "https://coursera.org/verify/U3RXL1VQZ0OM",
-    image: "assets/certs/google-ai-essentials-productivity.png"
+    image: "assets/logos/Certificates/Coursera U3RXL1VQZ0OM.pdf"
   },
   {
     title: "Introduction to AI",

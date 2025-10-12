@@ -1,8 +1,10 @@
 // Footer year
+import { certificates } from "./data.js";
+
 const y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();
 
-import { certificates } from "./data.js";
+
 
 function renderCertificates() {
   const row = document.getElementById("certsRow");
