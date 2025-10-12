@@ -97,4 +97,44 @@ const DETAILS = {
       }
     }
   };
-  
+// ===== Certificates (Coursera → Google AI Essentials) =====
+export const certificates = [
+  {
+    title: "Discover the Art of Prompting",
+    issuer: "Google on Coursera",
+    date: "Oct 11, 2025",
+    link: "https://coursera.org/verify/1GLUIOQ55WG8",
+    image: "assets/logos/Certificates/Coursera 1GLUIOQ55WG8.pdf"
+  },
+  {
+    title: "Use AI Responsibly",
+    issuer: "Google on Coursera",
+    date: "Oct 12, 2025",
+    link: "https://coursera.org/verify/9OF3A5Y20V35",
+    image: "assets/logos/Certificates/Coursera 9OF3A5Y20V35.pdf"
+  },
+  {
+    title: "Maximize Productivity With AI Tools",
+    issuer: "Google on Coursera",
+    date: "Oct 10, 2025",
+    link: "https://coursera.org/verify/U3RXL1VQZ0OM",
+    image: "assets/certs/google-ai-essentials-productivity.png"
+  },
+  {
+    title: "Introduction to AI",
+    issuer: "Google on Coursera",
+    date: "Oct 10, 2025",
+    link: "https://coursera.org/verify/ZRD2ZEVGF2BI",
+    image: "assets/logos/Certificates/Coursera ZRD2ZEVGF2BI.pdf"
+  },
+  // Optional: show what’s next
+  {
+    title: "AWS Cloud Practitioner (in progress)",
+    issuer: "AWS",
+    date: "Pending",
+    link: "",
+    image: "",
+    pending: true
+  }
+];
+ 

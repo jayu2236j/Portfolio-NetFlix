@@ -2,6 +2,37 @@
 const y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();
 
+import { certificates } from "./data.js";
+
+function renderCertificates() {
+  const row = document.getElementById("certsRow");
+  if (!row) return;
+
+  row.innerHTML = certificates.map(c => {
+    const isPending = !!c.pending;
+    const openAttrs = isPending
+      ? `aria-label="${c.title} (in progress)"`
+      : `role="button" tabindex="0"
+         onclick="window.open('${c.link}', '_blank')"
+         onkeypress="if(event.key==='Enter'){ window.open('${c.link}', '_blank') }"
+         aria-label="Open certificate ${c.title}"`;
+
+    return `
+      <article class="cert-card ${isPending ? 'pending' : ''}" ${openAttrs}>
+        <img class="cert-banner" src="${c.image || 'assets/certs/_placeholder.png'}" alt="${c.issuer} badge">
+        <h3 class="cert-title">${c.title}</h3>
+        <div class="cert-meta">${c.issuer} • ${c.date}</div>
+        ${isPending ? `<div class="badge">⌛ In progress</div>` : `<div class="badge">Verified</div>`}
+      </article>
+    `;
+  }).join("");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderCertificates();
+});
+
+
 // Arrow keys: nudge horizontally (Netflix feel)
 window.addEventListener('keydown', (e)=>{
   if(e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;

@@ -9,6 +9,9 @@
       'Team Lead — Tim Hortons': 'timhortons',
       'Dietary Aide — Seine River Retirement': 'seineriver'
     };
+
+    //{ label: "Certificates", href : "#certificates" }
+
   
     document.querySelectorAll('.card').forEach(card=>{
       const h3 = card.querySelector('h3');
