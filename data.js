@@ -99,43 +99,83 @@ const DETAILS = {
     }
   };
 // ===== Certificates (Coursera → Google AI Essentials) =====
-export const certificates = [
-  {
-    title: "Discover the Art of Prompting",
-    issuer: "Google on Coursera",
-    date: "Oct 11, 2025",
-    link: "https://coursera.org/verify/1GLUIOQ55WG8",
-    image: "assets/logos/Certificates/Coursera 1GLUIOQ55WG8.pdf"
-  },
-  {
-    title: "Use AI Responsibly",
-    issuer: "Google on Coursera",
-    date: "Oct 12, 2025",
-    link: "https://coursera.org/verify/9OF3A5Y20V35",
-    image: "assets/logos/Certificates/Coursera 9OF3A5Y20V35.pdf"
-  },
-  {
-    title: "Maximize Productivity With AI Tools",
-    issuer: "Google on Coursera",
-    date: "Oct 10, 2025",
-    link: "https://coursera.org/verify/U3RXL1VQZ0OM",
-    image: "assets/logos/Certificates/Coursera U3RXL1VQZ0OM.pdf"
-  },
-  {
-    title: "Introduction to AI",
-    issuer: "Google on Coursera",
-    date: "Oct 10, 2025",
-    link: "https://coursera.org/verify/ZRD2ZEVGF2BI",
-    image: "assets/logos/Certificates/Coursera ZRD2ZEVGF2BI.pdf"
-  },
-  // Optional: show what’s next
-  {
-    title: "AWS Cloud Practitioner (in progress)",
-    issuer: "AWS",
-    date: "Pending",
-    link: "",
-    image: "",
-    pending: true
-  }
-];
+// export const certificates = [
+//   {
+//     title: "Discover the Art of Prompting",
+//     issuer: "Google on Coursera",
+//     date: "Oct 11, 2025",
+//     link: "https://coursera.org/verify/1GLUIOQ55WG8",
+//     image: "assets/logos/Certificates/Coursera 1GLUIOQ55WG8.pdf"
+//   },
+//   {
+//     title: "Use AI Responsibly",
+//     issuer: "Google on Coursera",
+//     date: "Oct 12, 2025",
+//     link: "https://coursera.org/verify/9OF3A5Y20V35",
+//     image: "assets/logos/Certificates/Coursera 9OF3A5Y20V35.pdf"
+//   },
+//   {
+//     title: "Maximize Productivity With AI Tools",
+//     issuer: "Google on Coursera",
+//     date: "Oct 10, 2025",
+//     link: "https://coursera.org/verify/U3RXL1VQZ0OM",
+//     image: "assets/logos/Certificates/Coursera U3RXL1VQZ0OM.pdf"
+//   },
+//   {
+//     title: "Introduction to AI",
+//     issuer: "Google on Coursera",
+//     date: "Oct 10, 2025",
+//     link: "https://coursera.org/verify/ZRD2ZEVGF2BI",
+//     image: "assets/logos/Certificates/Coursera ZRD2ZEVGF2BI.pdf"
+//   },
+//   // Optional: show what’s next
+//   {
+//     title: "AWS Cloud Practitioner (in progress)",
+//     issuer: "AWS",
+//     date: "Pending",
+//     link: "",
+//     image: "",
+//     pending: true
+//   }
+// ];
+/* ===== Certificates Data =====
+   Each main certificate has an id and a list of subcerts.
+   Replace the sample titles/links with your real ones. */
+
+   const CERTIFICATES = [
+    {
+      id: "google-ai-essentials",
+      title: "Google AI Essentials — Main Certificate",
+      issuer: "Google",
+      year: "2025",
+      credentialUrl: "https://coursera.org/verify/MAIN-CERT-ID", // main credential link
+      summary: "Practical AI foundations: prompts, basics of ML, responsible AI, and real-world workflows.",
+      subcerts: [
+        {
+          title: "Foundations of AI",
+          credentialUrl: "https://coursera.org/verify/SUB-1"
+        },
+        {
+          title: "Prompting & Responsible AI",
+          credentialUrl: "https://coursera.org/verify/SUB-2"
+        },
+        {
+          title: "AI in Workplace Tools",
+          credentialUrl: "https://coursera.org/verify/SUB-3"
+        },
+        {
+          title: "Intro to Machine Learning",
+          credentialUrl: "https://coursera.org/verify/SUB-4"
+        },
+        {
+          title: "Capstone / Practical Project",
+          credentialUrl: "https://coursera.org/verify/SUB-5"
+        }
+      ]
+    }
+  
+    // Add more main certificates here in the same shape
+    // { id: "another-cert", title: "...", issuer: "...", year: "...", credentialUrl: "...", summary: "...", subcerts:[...] }
+  ];
+  
  

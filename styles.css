@@ -115,3 +115,5 @@
 .badge { display:inline-block; font-size:.75rem; padding:2px 8px; border-radius:999px; border:1px solid #e6e6e6; margin-top:6px; }
 .cert-card.pending { opacity:.6; cursor: default; }
 .cert-card.pending .badge { border-style: dashed; }
+
+
