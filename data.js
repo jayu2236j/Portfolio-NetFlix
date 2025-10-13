@@ -142,40 +142,24 @@ const DETAILS = {
    Each main certificate has an id and a list of subcerts.
    Replace the sample titles/links with your real ones. */
 
-   const CERTIFICATES = [
-    {
-      id: "google-ai-essentials",
-      title: "Google AI Essentials — Main Certificate",
-      issuer: "Google",
-      year: "2025",
-      credentialUrl: "https://coursera.org/verify/MAIN-CERT-ID", // main credential link
-      summary: "Practical AI foundations: prompts, basics of ML, responsible AI, and real-world workflows.",
-      subcerts: [
-        {
-          title: "Foundations of AI",
-          credentialUrl: "https://coursera.org/verify/SUB-1"
-        },
-        {
-          title: "Prompting & Responsible AI",
-          credentialUrl: "https://coursera.org/verify/SUB-2"
-        },
-        {
-          title: "AI in Workplace Tools",
-          credentialUrl: "https://coursera.org/verify/SUB-3"
-        },
-        {
-          title: "Intro to Machine Learning",
-          credentialUrl: "https://coursera.org/verify/SUB-4"
-        },
-        {
-          title: "Capstone / Practical Project",
-          credentialUrl: "https://coursera.org/verify/SUB-5"
-        }
-      ]
-    }
-  
-    // Add more main certificates here in the same shape
-    // { id: "another-cert", title: "...", issuer: "...", year: "...", credentialUrl: "...", summary: "...", subcerts:[...] }
-  ];
+   // ===== Certificates Data =====
+const CERTIFICATES = [
+  {
+    id: "google-ai-essentials",
+    title: "Google AI Essentials — Main Certificate",
+    issuer: "Google",
+    year: "2025",
+    credentialUrl: "https://coursera.org/verify/MAIN-CERT-ID", // replace
+    summary: "Practical AI foundations: prompts, ML basics, responsible AI, and real workflows.",
+    subcerts: [
+      { title: "Foundations of AI", credentialUrl: "https://coursera.org/verify/SUB-1" },
+      { title: "Prompting & Responsible AI", credentialUrl: "https://coursera.org/verify/SUB-2" },
+      { title: "AI in Workplace Tools", credentialUrl: "https://coursera.org/verify/SUB-3" },
+      { title: "Intro to Machine Learning", credentialUrl: "https://coursera.org/verify/SUB-4" },
+      { title: "Capstone / Practical Project", credentialUrl: "https://coursera.org/verify/SUB-5" }
+    ]
+  }
+];
+
   
  

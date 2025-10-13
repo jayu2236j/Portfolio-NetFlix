@@ -102,7 +102,7 @@
 .h-scroll::-webkit-scrollbar-thumb { border-radius: 8px; }
 
 /* Certificate card */
-.cert-card {
+/* .cert-card {
   min-width: 240px; max-width: 240px; flex: 0 0 auto;
   border: 1px solid #e6e6e6; border-radius: 14px; padding: 12px;
   background: #fff; scroll-snap-align: start;
@@ -114,6 +114,6 @@
 .cert-meta { font-size: .9rem; color: #666; }
 .badge { display:inline-block; font-size:.75rem; padding:2px 8px; border-radius:999px; border:1px solid #e6e6e6; margin-top:6px; }
 .cert-card.pending { opacity:.6; cursor: default; }
-.cert-card.pending .badge { border-style: dashed; }
+.cert-card.pending .badge { border-style: dashed; } */
 
 

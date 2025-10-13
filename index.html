@@ -176,12 +176,60 @@
     </div>
     
     <!-- ===== Certificates ===== -->
-<section id="certificates" class="section">
-  <div class="container">
-    <h2 class="section-title">Certificates</h2>
-    <div id="cert-grid" class="grid"></div>
-  </div>
-</section>
+<!-- load CERTIFICATES first -->
+<script src="data.js"></script>
+
+<!-- render Certificates on Home (single copy only) -->
+<script>
+  (function renderCertificatesOnHome(){
+    if (!window.CERTIFICATES) return;
+    const grid = document.getElementById('cert-grid');
+    if (!grid) return;
+
+    grid.innerHTML = CERTIFICATES.map(c => `
+      <article class="card" tabindex="0" role="button" aria-label="Open ${c.title}">
+        <div>
+          <div class="tag">${c.issuer}${c.year ? ' • ' + c.year : ''}</div>
+          <h3>${c.title}</h3>
+          <p>${c.summary ?? ""}</p>
+        </div>
+        <div class="actions" style="margin-top:.75rem">
+          <a class="btn" href="certificates.html?id=${encodeURIComponent(c.id)}">View details</a>
+          ${c.credentialUrl ? `<a class="btn secondary" href="${c.credentialUrl}" target="_blank" rel="noopener">Main credential ↗</a>` : ""}
+        </div>
+      </article>
+    `).join('');
+  })();
+</script>
+
+<!-- then your other scripts -->
+<script type="module" src="script.js"></script>
+<script type="module" src="nav.js"></script>
+
+
+<script>
+  // Minimal render right on index using CERTIFICATES from data.js
+  (function renderCertificatesOnHome(){
+    if (!window.CERTIFICATES) return;
+    const grid = document.getElementById('cert-grid');
+    if (!grid) return;
+
+    grid.innerHTML = CERTIFICATES.map(c => `
+      <article class="card cert-card" tabindex="0" role="button" aria-label="Open ${c.title}">
+        <a class="stretched-link" href="certificates.html?id=${encodeURIComponent(c.id)}"></a>
+        <div class="card-body">
+          <div class="card-kicker">${c.issuer} • ${c.year ?? ""}</div>
+          <h3 class="card-title">${c.title}</h3>
+          <p class="card-text">${c.summary ?? ""}</p>
+          <div class="pill-row">
+            <span class="pill">${(c.subcerts || []).length} sub-certificates</span>
+          </div>
+        </div>
+      </article>
+    `).join('');
+  })();
+</script>
+
 
 <script>
   // Minimal render right on index using CERTIFICATES from data.js
