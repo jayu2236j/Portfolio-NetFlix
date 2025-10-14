@@ -15,13 +15,13 @@
   <header class="nav">
     <div class="brand">
       <span class="badge">JC</span>
-      <div class="links" >
-       <span href="http://127.0.0.1:5500/Portfolio-NetFlix/index.html" >Jay&nbsp;Champaneri</span>
-    </div>
+      <!-- FIXED: use a real anchor, not <span href> -->
+      <a href="index.html">Jay&nbsp;Champaneri</a>
     </div>
     <nav class="links">
       <a class="btn" href="#projects">Projects</a>
       <a class="btn" href="#skills">Skills</a>
+      <a class="btn" href="#certificates">Certificates</a>
       <a class="btn" href="#contact">Contact</a>
     </nav>
   </header>
@@ -47,13 +47,13 @@
         <!-- TaskFlow (Completed) -->
         <article class="card" role="link" tabindex="0" data-kind="project" data-id="taskflow">
           <span class="tag">Completed</span>
-          <h3>MEARN — Task/Notes App</h3>
-          <p>Full Stack Notes App using MERN. Our Notes App contains functionalities like Authentication (Login & Sign Up), Adding/Edit Notes, Pin important notes to the top, and searching through the notes.  </p>
+          <h3>MERN — Task/Notes App</h3>
+          <p>Full Stack Notes App using MERN. Our Notes App contains functionalities like Authentication (Login & Sign Up), Adding/Edit Notes, Pin important notes to the top, and searching through the notes.</p>
           <div class="list">
             <span class="chip">Node.js</span>
             <span class="chip">MongoDB</span>
             <span class="chip">Express</span>
-            <span class="chip">TailWind</span>
+            <span class="chip">Tailwind</span>
             <span class="chip">React JS</span>
           </div>
           <div class="actions" style="margin-top:.75rem">
@@ -107,14 +107,12 @@
         <div class="card"><h3>Cloud</h3><p class="muted">AWS (Cloud fundamentals)</p><div class="list"><span class="chip">EC2</span><span class="chip">S3</span><span class="chip">IAM</span></div><div class="art"></div></div>
         <div class="card"><h3>Programming</h3><p class="muted">Java, Data Structures</p><div class="list"><span class="chip">OOP</span><span class="chip">DSA</span></div><div class="art"></div></div>
         <div class="card"><h3>Databases</h3><p class="muted">SQL (PostgreSQL), MongoDB</p><div class="list"><span class="chip">Schema</span><span class="chip">CRUD</span></div><div class="art"></div></div>
-        <div class="card"><h3>Web</h3><p class="muted">Node.js, React basics,HTML,JS</p><div class="list"><span class="chip">REST</span><span class="chip">Fetch</span></div><div class="art"></div></div>
-        <div class="card"><h3>TeamLeader</h3><p class="muted">Leadership, communication</p><div class="list"><span class="chip"></span><span class="chip"> </span></div><div class="art"></div></div>
-        <div class="card"><h3>Quick Learner</h3><p class="muted">Ready To Adapt New things</p><div class="list"><span class="chip"></span><span class="chip"></span></div><div class="art"></div></div>
-        <div class="card"><h3>Flexible</h3><p class="muted">Remote , Offline</p><div class="list"><span class="chip"></span><span class="chip"></span></div><div class="art"></div></div>
-
+        <div class="card"><h3>Web</h3><p class="muted">Node.js, React basics, HTML, JS</p><div class="list"><span class="chip">REST</span><span class="chip">Fetch</span></div><div class="art"></div></div>
+        <div class="card"><h3>Team Leader</h3><p class="muted">Leadership, communication</p><div class="list"></div><div class="art"></div></div>
+        <div class="card"><h3>Quick Learner</h3><p class="muted">Ready To Adapt New things</p><div class="list"></div><div class="art"></div></div>
+        <div class="card"><h3>Flexible</h3><p class="muted">Remote, Offline</p><div class="list"></div><div class="art"></div></div>
       </div>
     </div>
-    
 
     <!-- ABOUT + CONTACT -->
     <div class="row grid" id="about">
@@ -124,7 +122,7 @@
         <ul class="muted">
           <li>University of Winnipeg — Applied Computer Science (2023–2026)</li>
           <li>AWS Cloud Practitioner Essentials (2025)</li>
-          <li>Google Ai Essentials(2025)</li>
+          <li>Google AI Essentials (2025)</li>
         </ul>
       </section>
 
@@ -134,11 +132,15 @@
         <div class="list">
           <a class="btn" href="mailto:jaychampaneri2004@gmail.com">Email</a>
           <a class="btn secondary" href="https://github.com/jayu2236j" target="_blank" rel="noreferrer">GitHub</a>
-          <!-- Add LinkedIn when ready -->
         </div>
       </section>
     </div>
-    
+
+    <!-- CERTIFICATES -->
+    <section class="section" id="certificates">
+      <h2>Certificates</h2>
+      <div class="scroller" id="cert-grid"></div>
+    </section>
 
     <!-- EXPERIENCE -->
     <div class="row" id="experience">
@@ -167,102 +169,53 @@
         </article>
         <article class="card" role="link" tabindex="0" data-kind="job" data-id="pizzapizza">
           <span class="tag">2023–2024</span>
-          <h3>Shift Supervisor - Pizza Pizza</h3>
+          <h3>Shift Supervisor — Pizza Pizza</h3>
           <p>Delivered service with accuracy and compliance; collaborated across departments.</p>
-          <div class="list"><span class="chip">Teamwork</span><span class="chip">Challange</span></div>
+          <div class="list"><span class="chip">Teamwork</span><span class="chip">Challenge</span></div>
           <div class="art"></div>
         </article>
       </div>
     </div>
-    
-    <!-- ===== Certificates ===== -->
-<!-- load CERTIFICATES first -->
-<script src="data.js"></script>
-
-<!-- render Certificates on Home (single copy only) -->
-<script>
-  (function renderCertificatesOnHome(){
-    if (!window.CERTIFICATES) return;
-    const grid = document.getElementById('cert-grid');
-    if (!grid) return;
-
-    grid.innerHTML = CERTIFICATES.map(c => `
-      <article class="card" tabindex="0" role="button" aria-label="Open ${c.title}">
-        <div>
-          <div class="tag">${c.issuer}${c.year ? ' • ' + c.year : ''}</div>
-          <h3>${c.title}</h3>
-          <p>${c.summary ?? ""}</p>
-        </div>
-        <div class="actions" style="margin-top:.75rem">
-          <a class="btn" href="certificates.html?id=${encodeURIComponent(c.id)}">View details</a>
-          ${c.credentialUrl ? `<a class="btn secondary" href="${c.credentialUrl}" target="_blank" rel="noopener">Main credential ↗</a>` : ""}
-        </div>
-      </article>
-    `).join('');
-  })();
-</script>
-
-<!-- then your other scripts -->
-<script type="module" src="script.js"></script>
-<script type="module" src="nav.js"></script>
-
-
-<script>
-  // Minimal render right on index using CERTIFICATES from data.js
-  (function renderCertificatesOnHome(){
-    if (!window.CERTIFICATES) return;
-    const grid = document.getElementById('cert-grid');
-    if (!grid) return;
-
-    grid.innerHTML = CERTIFICATES.map(c => `
-      <article class="card cert-card" tabindex="0" role="button" aria-label="Open ${c.title}">
-        <a class="stretched-link" href="certificates.html?id=${encodeURIComponent(c.id)}"></a>
-        <div class="card-body">
-          <div class="card-kicker">${c.issuer} • ${c.year ?? ""}</div>
-          <h3 class="card-title">${c.title}</h3>
-          <p class="card-text">${c.summary ?? ""}</p>
-          <div class="pill-row">
-            <span class="pill">${(c.subcerts || []).length} sub-certificates</span>
-          </div>
-        </div>
-      </article>
-    `).join('');
-  })();
-</script>
-
-
-<script>
-  // Minimal render right on index using CERTIFICATES from data.js
-  (function renderCertificatesOnHome(){
-    if (!window.CERTIFICATES) return;
-    const grid = document.getElementById('cert-grid');
-    if (!grid) return;
-
-    grid.innerHTML = CERTIFICATES.map(c => `
-      <article class="card cert-card" tabindex="0" role="button" aria-label="Open ${c.title}">
-        <a class="stretched-link" href="certificates.html?id=${encodeURIComponent(c.id)}"></a>
-        <div class="card-body">
-          <div class="card-kicker">${c.issuer} • ${c.year ?? ""}</div>
-          <h3 class="card-title">${c.title}</h3>
-          <p class="card-text">${c.summary ?? ""}</p>
-          <div class="pill-row">
-            <span class="pill">${(c.subcerts || []).length} sub-certificates</span>
-          </div>
-        </div>
-      </article>
-    `).join('');
-  })();
-</script>
-
   </main>
 
   <footer>
     © <span id="year"></span> Jay Champaneri • Built with HTML/CSS/JS • Hosted on GitHub Pages
   </footer>
 
-  <script type="module" src="script.js"></script>
-<script type="module" src="nav.js"></script>
-<script src="data.js"></script>
+  <!-- SCRIPTS (correct order!) -->
+  <!-- 1) data (globals) -->
+  <script src="data.js"></script>
 
+  <!-- 2) page modules -->
+  <script type="module" src="script.js"></script>
+  <script type="module" src="nav.js"></script>
+
+  <!-- 3) render certificates after data.js is loaded -->
+  <script>
+    // Footer year
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+
+    // Certificates on home
+    (function renderCertificatesOnHome(){
+      if (!window.CERTIFICATES) return;
+      const grid = document.getElementById('cert-grid');
+      if (!grid) return;
+
+      grid.innerHTML = CERTIFICATES.map(c => `
+        <article class="card" tabindex="0" role="button" aria-label="Open ${c.title}">
+          <div>
+            <div class="tag">${c.issuer}${c.year ? ' • ' + c.year : ''}</div>
+            <h3>${c.title}</h3>
+            <p>${c.summary ?? ""}</p>
+          </div>
+          <div class="actions" style="margin-top:.75rem">
+            <a class="btn" href="certificates.html?id=${encodeURIComponent(c.id)}">View details</a>
+            ${c.credentialUrl ? `<a class="btn secondary" href="${c.credentialUrl}" target="_blank" rel="noopener">Main credential ↗</a>` : ""}
+          </div>
+        </article>
+      `).join('');
+    })();
+  </script>
 </body>
 </html>

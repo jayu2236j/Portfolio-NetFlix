@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Certificates • Jay Champaneri</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Certificates and sub-certificates earned by Jay Champaneri." />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <span class="badge">JC</span>
+      <a href="index.html">Jay&nbsp;Champaneri</a>
+    </div>
+    <nav class="links">
+      <a class="btn" href="index.html#certificates">Back</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <nav class="breadcrumb" aria-label="breadcrumb" style="margin-bottom:1rem">
+      <a href="index.html">Home</a> <span>›</span>
+      <a href="index.html#certificates">Certificates</a> <span>›</span>
+      <span id="crumb-cert-title">Loading…</span>
+    </nav>
+    <div id="cert-hero" class="card" style="margin-bottom:1rem"></div>
+    <h2>Included Sub-Certificates</h2>
+    <div id="subcert-list" class="stack"></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="yr"></span> Jay Champaneri</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="certificates.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
