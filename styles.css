@@ -101,6 +101,11 @@
 .h-scroll::-webkit-scrollbar { height: 8px; }
 .h-scroll::-webkit-scrollbar-thumb { border-radius: 8px; }
 
+.avatar{
+  width:120px; height:120px; object-fit:cover; border-radius:50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
 /* Certificate card */
 /* .cert-card {
   min-width: 240px; max-width: 240px; flex: 0 0 auto;
