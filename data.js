@@ -120,7 +120,7 @@ window.CERTIFICATES = [
     title: "Google Data Analysis with Python Specialization",
     issuer: "Google",
     year: "2025",
-    credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/44E7IXQUJPPR", 
+    //credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/44E7IXQUJPPR", 
     summary: "Completed a hands-on program covering the full analytics lifecycle: defining business questions, gathering data, cleaning & wrangling, exploratory analysis, visualization, and communicating insights to stakeholders. Worked with real datasets to build dashboards and answer decision-driven questions using Spreadsheets, SQL, R, and Tableau/Looker Studio, with emphasis on reproducibility, data ethics, and clear storytelling.",
     subcerts: [
       { title: "Hello, Python!",       credentialUrl: "https://www.coursera.org/account/accomplishments/verify/CR6OIGBUQ55H" },
