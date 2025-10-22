@@ -4,6 +4,27 @@
 
 window.DETAILS = {
   project: {
+    AWS: {
+      title: 'AWS',
+      image: 'assets/logos/AWS.jpg.webp',
+      logo: 'assets/logos/hq720.jpg',
+      tags: ['Research','Cloud'],
+      languages: ['English'],
+      skills: ['Research','UpToDate','Cloud'],
+      description: [
+        'Executive Summary',
+        'Timeline of Event',
+        'Root Cause Analysis',
+        'Impact Assessment',
+        'Lessons Learned and Recommendations',
+        'Conclusion',
+        'References'
+      ],
+      links: [
+        {label:'References[Main]', href:'https://www.tomsguide.com/news/live/amazon-outage-october-2025'},
+        {label:'Case Study', href:'https://docs.google.com/document/d/10Fm0rs_BQXq_D6HccYQAK8fWW9GIPcFS_Vd5FD-view/edit?usp=sharing'}
+      ]
+    },
     taskflow: {
       title: 'TaskFlow — Task Management Web App',
       image: 'assets/screenshots/taskflow.png',
