@@ -138,7 +138,7 @@ window.CERTIFICATES = [
   },
   {
     id: "Google Data Analysis",
-    title: "Google Data Analysis with Python Specialization",
+    title: "Google Data Analysis with Python Specialization[In Progress]",
     issuer: "Google",
     year: "2025",
     //credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/44E7IXQUJPPR", 
