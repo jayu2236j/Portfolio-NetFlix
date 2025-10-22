@@ -27,7 +27,7 @@ window.DETAILS = {
     },
     taskflow: {
       title: 'TaskFlow — Task Management Web App',
-      image: 'assets/screenshots/taskflow.png',
+      image: 'assets/logos/MERN.jpeg',
       logo: 'assets/logos/taskflow.png',
       tags: ['Full-Stack','Productivity'],
       languages: ['JavaScript'],
@@ -44,7 +44,7 @@ window.DETAILS = {
     },
     weather: {
       title: 'Weather App — Live Weather Viewer',
-      image: 'assets/screenshots/weather.png',
+      image: 'assets/logos/Weather.jpg',
       logo: 'assets/logos/weather.png',
       tags: ['Frontend','API'],
       languages: ['HTML','CSS','JavaScript'],
@@ -60,7 +60,7 @@ window.DETAILS = {
     },
     financetracker: {
       title: 'Personal Finance Tracker (Planned)',
-      image: 'assets/screenshots/finance.png',
+      image: 'assets/logos/images.png',
       logo: 'assets/logos/finance.png',
       tags: ['Full-Stack','Analytics'],
       languages: ['JavaScript'],
