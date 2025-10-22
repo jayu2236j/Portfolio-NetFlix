@@ -121,4 +121,37 @@
 .cert-card.pending { opacity:.6; cursor: default; }
 .cert-card.pending .badge { border-style: dashed; } */
 
+/*For Mobile*/
+/* ===== Mobile improvements ===== */
+@media (max-width: 700px){
+  .nav{ padding:.75rem 1rem; }
+  .brand{ font-size:1rem; }
+  .nav .links{ display:flex; gap:.5rem; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  .nav a.btn{ padding:.5rem .7rem; font-size:.9rem; white-space:nowrap; }
+
+  .hero{ min-height:auto; padding:3rem 1rem 1.25rem; }
+  .hero p{ padding:0 .25rem; }
+
+  .section{ padding:1rem 1rem 0; }
+  .row{ margin-bottom:1.5rem; }
+
+  .scroller{ grid-auto-columns:minmax(88vw, 1fr); gap:.8rem; }
+  .card{ min-height:auto; padding:.9rem; }
+
+  .scroll-btn{ display:none; }
+  .panel{ padding:.9rem; }
+  .chip{ padding:.3rem .6rem; }
+  .card .actions .btn{ padding:.7rem .9rem; }
+}
+
+@media (max-width: 380px){
+  .hero h1{ font-size:clamp(1.6rem, 8vw, 2rem); }
+  .nav a.btn{ font-size:.85rem; }
+}
+@media (max-width: 700px){
+  /* Stack nav on small screens and prevent button overlap */
+  .nav{ flex-wrap: wrap; align-items:flex-start; }
+  .nav .links{ width:100%; margin-top:.5rem; padding-bottom:.25rem; }
+  .nav .links a.btn{ flex:0 0 auto; display:inline-block; }
+}
 
