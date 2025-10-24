@@ -168,10 +168,11 @@ window.CERTIFICATES = [
     summary: "Completed a hands-on program covering the full analytics lifecycle: defining business questions, gathering data, cleaning & wrangling, exploratory analysis, visualization, and communicating insights to stakeholders. Worked with real datasets to build dashboards and answer decision-driven questions using Spreadsheets, SQL, R, and Tableau/Looker Studio, with emphasis on reproducibility, data ethics, and clear storytelling.",
     subcerts: [
       { title: "Hello, Python!",       credentialUrl: "https://www.coursera.org/account/accomplishments/verify/CR6OIGBUQ55H" },
-      { title: "Use AI Responsibly",                  /* credentialUrl: "https://coursera.org/verify/9OF3A5Y20V35" */},
-      { title: "Maximize Productivity With AI Tools",  /*credentialUrl: "https://coursera.org/verify/U3RXL1VQZ0OM" */},
-      { title: "Introduction to AI",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
-      { title: "Stay Ahead of the AI Curve",        /* credentialUrl: "https://www.coursera.org/account/accomplishments/verify/YNLD1OAD8FIT"*/}, 
+      { title: "Functions and Conditional Statment",                   credentialUrl: "https://www.coursera.org/account/accomplishments/records/B0Z5CAKGDIGS" },
+      { title: "Loops and Strings",  credentialUrl: "https://coursera.org/verify/U3RXL1VQZ0OM" },
+      { title: "Data Structures in Python",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
+      { title: "Explore Ras Data",        /* credentialUrl: "https://www.coursera.org/account/accomplishments/verify/YNLD1OAD8FIT"*/},
+      { title: "Clean Your Data",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
     ]
   }
 ];
