@@ -25,6 +25,29 @@ window.DETAILS = {
         {label:'Case Study', href:'https://docs.google.com/document/d/10Fm0rs_BQXq_D6HccYQAK8fWW9GIPcFS_Vd5FD-view/edit?usp=sharing'}
       ]
     },
+    Atlas: {
+      title: 'Atlas',
+      image: 'assets/logos/108402_openai-unveils-google-rival-with-chatgpt-atlas-new-web-browser.jpg',
+      logo: 'assets/logos/hq720.jpg',
+      tags: ['Research','AI','Browser'],
+      languages: ['English'],
+      skills: ['Research','UpToDate','AI'],
+      description: [
+      'Executive Summary',
+       'Background and Context',
+       'Key Features and Innovations',
+       'Technical Overview',
+       'Advantages and Disadvantages',
+       'Reviews and Reactionn',
+       'Conclusion',
+       'References'
+
+      ],
+      links: [
+        {label:'References[Main]', href:'https://www.tomsguide.com/ai/chatgpt/chatgpt-atlas-browser-is-live-heres-the-top-7-features-that-make-it-different'},
+        {label:'Case Study', href:'https://docs.google.com/document/d/1lNOKNx65zVQg_sohogjEH5Dqwhjl7WoAK59erxA4wrY/edit?usp=sharing'}
+      ]
+    },
     taskflow: {
       title: 'TaskFlow — Task Management Web App',
       image: 'assets/logos/MERN.jpeg',
