@@ -170,7 +170,7 @@ window.CERTIFICATES = [
       { title: "Hello, Python!",       credentialUrl: "https://www.coursera.org/account/accomplishments/verify/CR6OIGBUQ55H" },
       { title: "Functions and Conditional Statment",                   credentialUrl: "https://www.coursera.org/account/accomplishments/records/B0Z5CAKGDIGS" },
       { title: "Loops and Strings",  credentialUrl: "https://www.coursera.org/account/accomplishments/records/AD6MQODZUMZV" },
-      { title: "Data Structures in Python",       /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
+      { title: "Data Structures in Python",       credentialUrl: "https://www.coursera.org/account/accomplishments/verify/I2UON24LGZU1"}, 
       { title: "Explore Ras Data",        /* credentialUrl: "https://www.coursera.org/account/accomplishments/verify/YNLD1OAD8FIT"*/},
       { title: "Clean Your Data",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
     ]
