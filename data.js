@@ -174,5 +174,25 @@ window.CERTIFICATES = [
       { title: "Explore Raw Data",        /* credentialUrl: "https://www.coursera.org/account/accomplishments/verify/YNLD1OAD8FIT"*/},
       { title: "Clean Your Data",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
     ]
+  },
+  {
+    id: "Google Cybersecurity Professional Certificate",
+    title: "Google Cybersecurity Professional Certificate[In Progress]",
+    issuer: "Google",
+    year: "2025",
+    //credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/44E7IXQUJPPR", 
+    summary: "Completing the Google Cybersecurity Certificate, gaining hands-on skills in cybersecurity tools, threat analysis, risk management, and security best practices to protect systems and data.",
+    subcerts: [
+      { title: "Foundation of CyberSecurity",       credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/I37EKA0LIYSM" },
+      { title: "Play It Safe: Manage Security Risks",                  /* credentialUrl: "https://www.coursera.org/account/accomplishments/records/B0Z5CAKGDIGS"*/ },
+      { title: "Connect and Protect: Networks and Network Security.",  /*credentialUrl: "https://www.coursera.org/account/accomplishments/records/AD6MQODZUMZV"*/ },
+      { title: "Tools of the Trade: Linux and SQL",       /*credentialUrl: "https://www.coursera.org/account/accomplishments/verify/I2UON24LGZU1"*/}, 
+      { title: "Assets, Threats, and Vulnerabilities",        /* credentialUrl: "https://www.coursera.org/account/accomplishments/verify/YNLD1OAD8FIT"*/},
+      { title: "Sound the Alarm: Detection and Response ",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
+      { title: "Automate Cybersecurity Tasks with Python ",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
+      { title: "Put It to Work: Prepare for Cybersecurity Jobs ",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
+      { title: "Accelerate Your Job Search with AI ",                   /*credentialUrl: "https://coursera.org/verify/ZRD2ZEVGF2BI"*/}, 
+
+    ]
   }
 ];
